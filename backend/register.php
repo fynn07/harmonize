@@ -39,5 +39,9 @@ if (isset($_POST['registerBtn'])) {
                         alert('Username already existing');
                   </script>";
     }
+    
+    echo"<script>
+        window.location='index.php';
+        </script>";
 }
 ?>
