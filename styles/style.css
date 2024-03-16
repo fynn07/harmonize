@@ -1,0 +1,112 @@
+*{
+    font-style: normal;
+    font-family: 'karla', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container .left-side{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background-color: rgb(253, 190, 46);
+}
+
+.left-side .company-name > h1{
+    color: white;
+    font-size: 2rem;
+    padding-left: 18px;
+    font-weight: 700;
+    margin-bottom: 10.15vh;
+}
+
+.left-side .image-container > img{
+    width: 40vw;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-side .flavor-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side .flavor-text-container > h2{
+    color: white;
+    font-size: 1.15rem;
+}
+
+.container .right-side{
+    flex: 1;
+    background-color: #1d2b3a;
+}
+
+.container .right-side .forms-container{
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.container .right-side .forms-container .form-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 13vh;
+    margin-bottom: 5vh;
+}
+
+.container .right-side .forms-container .form-layer-container{
+    display: flex;
+    gap: 10vw;
+    margin-bottom: 6vh;
+}
+.container .right-side .forms-container .form-layer-container *{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.601);
+    font-size: 1.1rem;
+    gap: 1vh;
+}
+
+.container .right-side .forms-container .form-layer-container > div > input{
+    color: black;
+    background-color: white;
+    width: 12vw;
+    height: 2.5vh;
+    border-radius: 6px;
+}
+
+.container .right-side .forms-container .form-layer-container > div > input:focus{
+    border: 1px solid yellow;
+}
+
+.container .right-side .forms-container .form-header-container > h2{
+    color: white;
+    font-size: 2.7rem;
+}
+.container .right-side .forms-container .button-container{
+    margin-top: 7vh;
+}
+.container .right-side .forms-container .button-container button{
+    padding: 1.26vh 2.88vw;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(253, 190, 46);
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+
+.container .right-side .forms-container .button-container p{
+    color: rgba(255, 255, 255, 0.601);
+}
+
+.container .right-side .forms-container .button-container span{
+    color: rgb(253, 190, 46);
+}
+
