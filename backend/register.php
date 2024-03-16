@@ -20,16 +20,16 @@ if (isset($_POST['registerBtn'])) {
     $pword = $_POST['password'];
 
     //save data to tbluserprofile
-    $sql1 = "Insert into tbluserprofile(firstname, lastname, displayname) values('" . $fname . "','" . $lname . "','" . $dsplyname . "')";
+    $sql1 = "Insert into tbluserprofile(registerFname, registerLname, registerDsplyname) values('" . $fname . "','" . $lname . "','" . $dsplyname . "')";
     mysqli_query($connection, $sql1);
 
     //Check tbluseraccount if username is already existing. Save info if false. Prompt msg if true.
-    $sql2 = "Select * from tbluseraccount where username='" . $uname . "'";
+    $sql2 = "Select * from tbluseraccount where registerUsername='" . $uname . "'";
     $result = mysqli_query($connection, $sql2);
     $row = mysqli_num_rows($result);
 
     if ($row == 0) {
-        $sql = "Insert into tbluseraccount(username, password, email) values('" . $uname . "','" . $pword . "','" . $email . "')";
+        $sql = "Insert into tbluseraccount(registerUsername, registerPassword, registerEmail) values('" . $uname . "','" . $pword . "','" . $email . "')";
         mysqli_query($connection, $sql);
         echo "<script language='javascript'>
         alert('New record saved.');
@@ -39,7 +39,7 @@ if (isset($_POST['registerBtn'])) {
                         alert('Username already existing');
                   </script>";
     }
-    
+
     echo"<script>
         window.location='index.php';
         </script>";
