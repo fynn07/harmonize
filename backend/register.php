@@ -1,7 +1,10 @@
 <?php
 include("connect.php");
+include("misc.php");
 //global $connection;
 ?>
+
+<script src="../script/script.js"></script>
 
 <?php
 if (isset($_POST['registerBtn'])) {
@@ -31,13 +34,13 @@ if (isset($_POST['registerBtn'])) {
         alert('New record saved.');
         </script>";
     } else {
-        echo "<script language='javascript'>
-                        alert('Username already existing');
-                  </script>";
+        echo $error;
     }
 
     echo"<script>
-        window.location='index.php';
+        setTimeout(() => {
+            window.location='index.php';
+        }, 2000);
         </script>";
 }
 ?>
