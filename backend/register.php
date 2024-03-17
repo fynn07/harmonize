@@ -18,7 +18,7 @@ if (isset($_POST['registerBtn'])) {
     $uname = $_POST['username'];
     $pword = $_POST['password'];
 
-    $new_p = password_hash($pword, PASSWORD_DEFAULT);
+    $hashed_pword = password_hash($pword, PASSWORD_DEFAULT);
 
 
     //Check tbluseraccount if username is already existing. Save info if false. Prompt msg if true.
@@ -32,7 +32,7 @@ if (isset($_POST['registerBtn'])) {
         $sql1 = "Insert into tbluserprofile(registerFname, registerLname, registerGender) values('" . $fname . "','" . $lname . "','" . $gender . "')";
         mysqli_query($connection, $sql1);
 
-        $sql = "Insert into tbluseraccount(registerUsername, registerPassword, registerEmail) values('" . $uname . "','" . $new_p . "','" . $email . "')";
+        $sql = "Insert into tbluseraccount(registerUsername, registerPassword, registerEmail) values('" . $uname . "','" . $hashed_pword . "','" . $email . "')";
         mysqli_query($connection, $sql);
         echo $success_register;
     } else {

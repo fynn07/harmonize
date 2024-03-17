@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\type;
-
 include("connect.php");
 include("misc.php");
 include("register.php");
