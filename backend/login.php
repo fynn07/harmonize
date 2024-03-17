@@ -1,6 +1,10 @@
 <?php
+
+use function PHPSTORM_META\type;
+
 include("connect.php");
 include("misc.php");
+include("register.php");
 //global $connection;
 ?>
 
@@ -9,11 +13,13 @@ if(isset($_POST['loginBtn'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql2 = "Select * from tbluseraccount where registerUsername='" . $username . "' AND registerPassword='" . $password . "'";
-    $result = mysqli_query($connection, $sql2);
-    $row = mysqli_num_rows($result);
+    $sql_check = "SELECT registerPassword from tbluseraccount where registerUsername='" .$username . "'";
+    $hashed_pass = mysqli_query($connection, $sql_check);
+    $hashed_pass_new = mysqli_fetch_assoc($hashed_pass);
 
-    if($row == 0){
+    $is_pass = password_verify($password, $hashed_pass_new['registerPassword']);
+
+    if($is_pass == false){
         echo $failed_login;
     }
     else{
