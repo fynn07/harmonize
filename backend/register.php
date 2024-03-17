@@ -30,11 +30,9 @@ if (isset($_POST['registerBtn'])) {
 
         $sql = "Insert into tbluseraccount(registerUsername, registerPassword, registerEmail) values('" . $uname . "','" . $pword . "','" . $email . "')";
         mysqli_query($connection, $sql);
-        echo "<script language='javascript'>
-        alert('New record saved.');
-        </script>";
+        echo $success_register;
     } else {
-        echo $error;
+        echo $failed_register;
     }
 
     echo"<script>

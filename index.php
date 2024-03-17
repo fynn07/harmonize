@@ -65,7 +65,7 @@
                     </div>
                     <div class="button-container">
                         <button type="submit" name="registerBtn">Create Account</button>
-                        <p >Already have an account..? <span><a href="login.html">LOGIN</a></span></p>
+                        <p >Already have an account..? <span><a href="login_page.php">LOGIN</a></span></p>
                     </div>
 
                 </form>

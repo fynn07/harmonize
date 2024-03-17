@@ -123,6 +123,15 @@ body{
     text-align: center;
 }
 
+.login-success{
+    background-color: rgb(107, 235, 107);
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20vw;
+    text-align: center;
+}
+
 #gender_field{
     color: black;
     width: 12vw;

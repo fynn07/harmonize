@@ -37,12 +37,12 @@
                         </div>
                         <div class="for-layer-container">
                             <label for="password_field">Password</label>
-                            <input type="text" id="password_field" name="password">
+                            <input type="password" id="password_field" name="password">
                         </div>
                      </div>
 
                      <div class="button-container">
-                         <button type="submit" name="registerBtn">Login</button>
+                         <button type="submit" name="loginBtn">Login</button>
                          <p >Don't have an account..? <span><a href="index.php">Sign Up</a></span></p>
                      </div>
  
@@ -52,3 +52,7 @@
     </div> 
  </body>
 </html>
+
+<?php
+include("backend/login.php");
+?>
