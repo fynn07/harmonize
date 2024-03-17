@@ -12,7 +12,7 @@ if (isset($_POST['registerBtn'])) {
     //for tbluserprofile
     $fname = $_POST['firstname'];
     $lname = $_POST['lastname'];
-    $dsplyname = $_POST['displayname'];
+    $gender = $_POST['gender'];
 
     $email = $_POST['email'];
     $uname = $_POST['username'];
@@ -25,7 +25,7 @@ if (isset($_POST['registerBtn'])) {
 
     if ($row == 0) {
     //save data to tbluserprofile
-        $sql1 = "Insert into tbluserprofile(registerFname, registerLname, registerDsplyname) values('" . $fname . "','" . $lname . "','" . $dsplyname . "')";
+        $sql1 = "Insert into tbluserprofile(registerFname, registerLname, registerGender) values('" . $fname . "','" . $lname . "','" . $gender . "')";
         mysqli_query($connection, $sql1);
 
         $sql = "Insert into tbluseraccount(registerUsername, registerPassword, registerEmail) values('" . $uname . "','" . $pword . "','" . $email . "')";

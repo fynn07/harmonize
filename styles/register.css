@@ -106,8 +106,9 @@ body{
     color: rgba(255, 255, 255, 0.601);
 }
 
-.container .right-side .forms-container .button-container span{
+.container .right-side .forms-container .button-container span a{
     color: rgb(253, 190, 46);
+    text-decoration: none;
 }
 
 .error-message{
@@ -117,4 +118,9 @@ body{
     border-radius: 10px;
     width: 20vw;
     text-align: center;
+}
+
+#gender_field{
+    color: black;
+    width: 12vw;
 }
