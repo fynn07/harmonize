@@ -51,4 +51,15 @@
     website_container.appendChild(flex_container);
     </script>";
     
+    $echo_restart_register = "<script>
+        setTimeout(() => {
+            window.location='index.php';
+        }, 2000);
+        </script>";
+    
+    $echo_restart_login = "<script>
+        setTimeout(() => {
+            window.location='login_page.php';
+        }, 2000);
+        </script>";
 ?>

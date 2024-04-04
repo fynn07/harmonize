@@ -24,11 +24,7 @@ if(isset($_POST['loginBtn'])){
         echo $success_login;
     }
     
-    echo"<script>
-        setTimeout(() => {
-            window.location='login_page.php';
-        }, 2000);
-        </script>";
+    echo $echo_restart_login;
 }
 
 ?>

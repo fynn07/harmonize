@@ -39,10 +39,6 @@ if (isset($_POST['registerBtn'])) {
         echo $failed_register;
     }
 
-    echo"<script>
-        setTimeout(() => {
-            window.location='index.php';
-        }, 2000);
-        </script>";
+    echo $echo_restart_register;
 }
 ?>
