@@ -18,7 +18,7 @@
                     <li><a href="">Home</a></li>
                     <li><a href="register_page.php">Register</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="table_page.php">Tables</a></li>
                 </ul>
 
                 <button class='login_button'>Login</button>
