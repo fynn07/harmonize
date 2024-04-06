@@ -53,7 +53,7 @@
     
     $echo_restart_register = "<script>
         setTimeout(() => {
-            window.location='index.php';
+            window.location='register_page.php';
         }, 2000);
         </script>";
     

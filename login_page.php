@@ -43,7 +43,8 @@
 
                      <div class="button-container">
                          <button type="submit" name="loginBtn">Login</button>
-                         <p >Don't have an account..? <span><a href="index.php">Sign Up</a></span></p>
+                         <p >Don't have an account..? <span><a href="register_page.php">Sign Up</a></span></p>
+                         
                      </div>
  
                  </form>

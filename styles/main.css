@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+}
+
+.content{
+    padding: 0 200px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header *{
+    flex: 1;
+}
+
+.header .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.header .right{
+    display: flex;
+    gap: 30px;
+}
+
+.header .right button{
+    flex: 0;
+    padding: 10px 20px;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header .right .nav-bar{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+
+}.header{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header *{
+    flex: 1;
+}
+.header .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.header .right{
+    display: flex;
+    gap: 50px;
+}
+
+.header .right button{
+    flex: 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #ffe512;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-size: 18px;
+}
+
+.header .right button:hover{
+    border: 2px solid #ffe512;
+}
+
+.nav-bar-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.nav-bar-content *{
+    flex: 1;
+}
+
+.nav-bar-content li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar-content li a:hover{
+    border-bottom: 3px solid #ffe512;
+}
+
+.hero{
+    background-image: url(../resources/homepage/hero.jpeg);
+    width: 71.2vw;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+.hero button{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 3px;
+    background-color: #ffe512;
+    font-size: 20px;
+    border: 1px solid #ffe512;
+}
+.hero button:hover{
+    border: 1px solid black;
+}
+
+.hero{
+    background-image: url(../resources/landing-background.jpg);
+    width: 78.3vw;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+.hero button{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 3px;
+    background-color: #ffe512;
+    font-size: 20px;
+    border: 1px solid #ffe512;
+}
+.hero button:hover{
+    border: 1px solid black;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.offer p{
+    font-size: 30px;
+}
+
+.offer .offer-list{
+    display: flex;
+    gap: 30px;
+}
+
+.offer .offer-list .offer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer .offer-list .offer-item p{
+    font-size: 20px;
+}
+
+.offer .offer-list .offer-item img{
+    width: 300px;
+    height: 300px;
+    border: 6px solid #ffe512;
+}
+
+.footer{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+   
+}
+
+.footer *{
+    flex: 1;
+}
+
+.footer .center p{
+    text-align: center;
+}
+
+

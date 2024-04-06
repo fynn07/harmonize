@@ -16,7 +16,13 @@ function errorMessage(){
 }
 
 const test_button = document.querySelector("#testButton");
+const login_button = document.querySelector(".login_button");
 
 test_button.addEventListener('click', () => {
     errorMessage();
 })
+
+login_button.addEventListener('click', () => {
+    alert("test");
+})
+
