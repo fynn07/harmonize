@@ -17,12 +17,16 @@ body{
     background-color: rgb(253, 190, 46);
 }
 
-.left-side .company-name > h1{
-    color: white;
+.left-side .company-name h1{
     font-size: 2rem;
     padding-left: 18px;
     font-weight: 700;
     margin-bottom: 10.15vh;
+}
+
+.left-side .company-name h1 a{
+    color: white;
+    text-decoration: none;
 }
 
 .left-side .image-container > img{

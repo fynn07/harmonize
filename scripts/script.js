@@ -16,13 +16,13 @@ function errorMessage(){
 }
 
 const test_button = document.querySelector("#testButton");
-const login_button = document.querySelector(".login_button");
+const login_button = document.querySelector("#login-button-main");
 
 test_button.addEventListener('click', () => {
     errorMessage();
 })
 
-login_button.addEventListener('click', () => {
-    alert("test");
-})
+function redirectLoginPage(){
+    window.location = 'login_page.php';
+}
 

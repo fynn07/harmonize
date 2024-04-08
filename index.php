@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="script/script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
     <title>Website</title>
 </head>
 <body>
@@ -18,10 +18,10 @@
                     <li><a href="">Home</a></li>
                     <li><a href="register_page.php">Register</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="table_page.php">Tables</a></li>
+                    <li><a href="table_page.php">Members</a></li>
                 </ul>
 
-                <button class='login_button'>Login</button>
+                <button id="login-button-main" onclick="redirectLoginPage()">Login</button>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
                 </div>
                 <div class="offer-3 offer-item">
                     <img src="resources/offers/offer-4.jpg" alt="Fourth Offer">
-                    <p></p>
+                    <p>Certified Service</p>
                 </div>
             </div>
         </div>

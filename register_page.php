@@ -14,7 +14,7 @@
    <div class="container">
         <div class="left-side">
             <div class="company-name">
-                <h1>Harmonize™</h1>
+                <h1><a href="index.php" id="company-text">Harmonize™</a></h1>
             </div>
             <div class="image-container">
                 <img src="resources/logo_company.png" alt="bg">
