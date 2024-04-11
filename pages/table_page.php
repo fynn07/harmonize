@@ -1,5 +1,5 @@
 <?php
-    include 'backend/connect.php';
+    include '../backend/connect.php';
     $sql = "SELECT * FROM tbluserprofile";
     $result = mysqli_query($connection, $sql);
 ?>
@@ -8,8 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
             </div>
             <div class="right">
                 <ul class="nav-bar-content">
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="register_page.php">Register</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Members</a></li>

@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/register.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../styles/register.css?v=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script defer src="script/script.js"></script>
+    <script defer src="../script/script.js"></script>
     <title>Forms Page</title>
 </head>
 <body>
    <div class="container">
         <div class="left-side">
             <div class="company-name">
-                <h1><a href="index.php" id="company-text">Harmonize™</a></h1>
+                <h1><a href="../index.php" id="company-text">Harmonize™</a></h1>
             </div>
             <div class="image-container">
-                <img src="resources/logo_company.png" alt="bg">
+                <img src="../resources/logo_company.png" alt="bg">
             </div>
             <div class="flavor-text-container">
                 <h2>Join over 1,000,000+ musicians in harmony</h2>
@@ -76,5 +76,5 @@
 </html>
 
 <?php
-include 'backend/register.php'
+include '../backend/register.php'
 ?>

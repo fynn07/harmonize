@@ -15,14 +15,14 @@ function errorMessage(){
     }, 2000)
 }
 
-const test_button = document.querySelector("#testButton");
-const login_button = document.querySelector("#login-button-main");
-
-test_button.addEventListener('click', () => {
-    errorMessage();
-})
-
 function redirectLoginPage(){
-    window.location = 'login_page.php';
+    window.location = '../pages/login_page.php';
 }
 
+function redirectLoginPageIndex(){
+    window.location = 'pages/login_page.php';
+}
+
+function test(){
+    alert("hello");
+}

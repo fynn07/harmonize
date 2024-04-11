@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js?t=12345" defer></script>
     <title>Website</title>
 </head>
 <body>
@@ -16,12 +16,12 @@
             <div class="right">
                 <ul class="nav-bar-content">
                     <li><a href="">Home</a></li>
-                    <li><a href="register_page.php">Register</a></li>
+                    <li><a href="pages/register_page.php">Register</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="table_page.php">Members</a></li>
+                    <li><a href="pages/table_page.php">Members</a></li>
                 </ul>
 
-                <button id="login-button-main" onclick="redirectLoginPage()">Login</button>
+                <button onclick="redirectLoginPageIndex()">Login</button>
             </div>
         </div>
 
