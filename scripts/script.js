@@ -20,7 +20,7 @@ function redirectLoginPage(){
 }
 
 function redirectLoginPageIndex(){
-    window.location = 'pages/login_page.php';
+    window.location = '../pages/login_page.php';
 }
 
 function test(){
