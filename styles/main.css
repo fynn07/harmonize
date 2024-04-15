@@ -11,57 +11,17 @@ body{
 
 .header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header *{
-    flex: 1;
-}
-
-.header .left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-
-.header .right{
-    display: flex;
-    gap: 30px;
-}
-
-.header .right button{
-    flex: 0;
-    padding: 10px 20px;
-    text-align: center;
-    color: black;
-    border: 2px solid black;
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: 'Oswald';
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.header .right .nav-bar{
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
-
-}.header{
-    display: flex;
     background-color: black;
     color: white;
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    
 }
+
 .header *{
     flex: 1;
 }
+
 .header .left{
     display: flex;
     align-items: center;
@@ -78,18 +38,28 @@ body{
     flex: 0;
     padding: 10px 20px;
     text-align: center;
-    background-color: #ffe512;
     color: black;
+    background-color: #ffe512;
     border: 2px solid black;
     border-radius: 20px;
     font-size: 14px;
     font-family: 'Oswald';
     font-size: 18px;
+    cursor: pointer;
 }
 
 .header .right button:hover{
     border: 2px solid #ffe512;
 }
+
+.header .right .nav-bar{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+
+}
+
+
 
 .nav-bar-content{
     display: flex;
@@ -115,8 +85,8 @@ body{
 }
 
 .hero{
-    background-image: url(../resources/homepage/hero.jpeg);
-    width: 71.2vw;
+    background-image: url(../resources/landing-background.jpg);
+    background-size:contain;
     height: 500px;
     background-size: cover;
     text-align: center;
@@ -148,20 +118,6 @@ body{
     border: 1px solid black;
 }
 
-.hero{
-    background-image: url(../resources/landing-background.jpg);
-    width: 78.3vw;
-    height: 500px;
-    background-size: cover;
-    text-align: center;
-    padding-bottom: 100px;
-    border-bottom: 5px solid black;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
 
 .hero p{
     margin: 0;

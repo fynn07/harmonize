@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="scripts/script.js?t=12345" defer></script>
     <title>Website</title>
 </head>
@@ -61,10 +64,9 @@
             </div>
         </div> <div class="footer content">
             <div class="left-side">
-                <p>© 2023 Music Company</p>
             </div>
             <div class="center">
-                <p>Harmonize</p>
+                <p>© 2023 Music Company</p>
             </div>
             <div class="right-side">
             </div>
