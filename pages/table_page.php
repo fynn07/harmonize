@@ -1,7 +1,10 @@
 <?php
     include '../backend/connect.php';
     $sql = "SELECT * FROM tbluserprofile";
+    $sql2 = "SELECT * FROM tblUserType";
     $result = mysqli_query($connection, $sql);
+    $result2 = mysqli_query($connection, $sql2);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,13 +36,18 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Gender</th>
+            <th>Band/Label</th>
+            <th>Band/Label Name</th>
         </tr>
     <?php
         while($row = mysqli_fetch_assoc ($result)){
+            $row2 = mysqli_fetch_assoc ($result2);
             echo "<tr>";
             echo "<td>".$row['registerFname']."</td>";
             echo "<td>".$row['registerLname']."</td>";
             echo "<td>".$row['registerGender']."</td>";
+            echo "<td>".$row2['registerType']."</td>";
+            echo "<td>".$row2['registerTypeName']."</td>";
             echo "<tr>";
         }
         ?>

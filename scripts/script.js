@@ -15,6 +15,11 @@ function errorMessage(){
     }, 2000)
 }
 
+function displayUserType(){
+    let website_container = document.querySelector('.container');
+    
+}
+
 function redirectLoginPage(){
     window.location = '../pages/login_page.php';
 }

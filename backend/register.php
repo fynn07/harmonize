@@ -18,6 +18,9 @@ if (isset($_POST['registerBtn'])) {
     $uname = $_POST['username'];
     $pword = $_POST['password'];
 
+    $userT = $_POST['usertype'];
+    $userTName = $_POST['usertypename'];
+
     $hashed_pword = password_hash($pword, PASSWORD_DEFAULT);
 
 
@@ -29,6 +32,9 @@ if (isset($_POST['registerBtn'])) {
 
     if ($row == 0) {
     //save data to tbluserprofile
+        $sql2 = "Insert into tblUserType(registerTypeName, registerType) values ('" . $userTName . "','" . $userT . "')";
+        mysqli_query($connection, $sql2);
+        
         $sql1 = "Insert into tbluserprofile(registerFname, registerLname, registerGender) values('" . $fname . "','" . $lname . "','" . $gender . "')";
         mysqli_query($connection, $sql1);
 
