@@ -71,13 +71,25 @@
                         <div class="form-layer-container">
                             <div class="username-container">
                                 <label for="username_field">Username</label>
-                                <input type="text" name="username" id="username" required maxlength="20">
+                                <input type="text" name="username" id="username_field" required maxlength="20">
                             </div>
                             <div class="password-container">
                                 <label for="password_field">Password</label>
                                 <input type="password" name="password" id="password_field" required minlength="6" maxlength="20">
                             </div>
-
+                        </div>
+                        <div class="form-layer-container">
+                            <div class="band-name-container">
+                                <label for="band_name_field">Band/Label Name</label>
+                                <input type="text" name="usertypename" id="band_name_field" required maxlength="20">
+                            </div>
+                            <div class="user-type-container">
+                                <label for="user_type_field">User Type</label>
+                                <select name="usertype" id="gender_field">
+                                    <option value="Band">Band</option>
+                                    <option value="Label">Label</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="button-container">
                             <button type="submit" name="registerBtn">Create Account</button>
@@ -89,6 +101,7 @@
             </div>
         </div>
    </div> 
+
 </body>
 </html>
 

@@ -147,8 +147,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 6vh;
-    margin-bottom: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
 
 .container .right-side .forms-container .form-layer-container{
@@ -223,4 +223,24 @@ body{
 #gender_field{
     color: black;
     width: 12vw;
+}
+
+.test-pop{
+    position: absolute;
+    left: 40%;
+    right: 60%;
+    top: 40%;
+    bottom: 60%;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.test-content{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 1px solid black;
 }

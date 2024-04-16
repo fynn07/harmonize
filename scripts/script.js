@@ -1,4 +1,4 @@
-
+//new branch
 function errorMessage(){
     let website_container = document.querySelector('.container');
     let flex_container = document.createElement('div');
@@ -13,6 +13,11 @@ function errorMessage(){
     setTimeout(() => {
         website_container.removeChild(flex_container);
     }, 2000)
+}
+
+function displayUserType(){
+    let website_container = document.querySelector('.container');
+    
 }
 
 function redirectLoginPage(){
