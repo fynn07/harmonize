@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 17, 2024 at 04:16 AM
+-- Generation Time: Apr 16, 2024 at 10:02 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -30,17 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbluseraccount` (
   `acctid` int(4) NOT NULL,
   `registerUsername` varchar(20) NOT NULL,
-  `registerPassword` varchar(20) NOT NULL,
+  `registerPassword` varchar(1000) NOT NULL,
   `registerEmail` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tbluseraccount`
---
-
-INSERT INTO `tbluseraccount` (`acctid`, `registerUsername`, `registerPassword`, `registerEmail`) VALUES
-(1, 'wrong_name', '123456', 'wrongemail@gmail.com'),
-(2, 'correct_name', '1234567', 'pewdiestuff@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -55,13 +47,17 @@ CREATE TABLE `tbluserprofile` (
   `registerGender` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `tbluserprofile`
+-- Table structure for table `tblUserType`
 --
 
-INSERT INTO `tbluserprofile` (`userid`, `registerFname`, `registerLname`, `registerGender`) VALUES
-(1, 'Fynn', 'Borja', 'male'),
-(2, 'Fynn', 'Borja', 'male');
+CREATE TABLE `tblUserType` (
+  `typeid` int(3) NOT NULL,
+  `registerTypeName` varchar(100) NOT NULL,
+  `registerType` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -80,6 +76,12 @@ ALTER TABLE `tbluserprofile`
   ADD PRIMARY KEY (`userid`);
 
 --
+-- Indexes for table `tblUserType`
+--
+ALTER TABLE `tblUserType`
+  ADD PRIMARY KEY (`typeid`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -87,13 +89,19 @@ ALTER TABLE `tbluserprofile`
 -- AUTO_INCREMENT for table `tbluseraccount`
 --
 ALTER TABLE `tbluseraccount`
-  MODIFY `acctid` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `acctid` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbluserprofile`
 --
 ALTER TABLE `tbluserprofile`
-  MODIFY `userid` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `userid` int(4) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tblUserType`
+--
+ALTER TABLE `tblUserType`
+  MODIFY `typeid` int(3) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
